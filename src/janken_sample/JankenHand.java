@@ -12,7 +12,21 @@ public enum JankenHand {
             case Scissors:
                 return "チョキ";  
             case Paper:
-                return"パー";
+                return "パー";
+            default:
+                return "";
+        }
+    }
+
+    @Override
+    public String toString() {
+        switch(this) {
+            case Rock:
+                return "グー";
+            case Scissors:
+                return "チョキ";  
+            case Paper:
+                return "パー";
             default:
                 return "";
         }
