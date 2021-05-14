@@ -24,7 +24,7 @@ public class Main {
                 return;
         }
 
-        System.out.println(player);
+        System.out.println("あなたの手：" + player);
 
         int pc = new Random().nextInt(3);
 
