@@ -8,13 +8,26 @@ public enum JankenHand {
     public String displayHand() {
         switch(this) {
             case Rock:
-                return "グー";
+                return "✊";
             case Scissors:
                 return "チョキ";  
             case Paper:
-                return "パー";
+                return "✋";
             default:
                 return "";
+        }
+    }
+ 
+    public static JankenHand fromInt(int n) {
+        switch(n % 3) {
+            case 0:
+                return Rock;
+            case 1:
+                return Scissors;
+            case 2:
+                return Paper;
+            default:
+                return null;
         }
     }
 
@@ -22,11 +35,11 @@ public enum JankenHand {
     public String toString() {
         switch(this) {
             case Rock:
-                return "グー";
+                return "✊";
             case Scissors:
                 return "チョキ";  
             case Paper:
-                return "パー";
+                return "✋";
             default:
                 return "";
         }

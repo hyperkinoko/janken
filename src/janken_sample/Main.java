@@ -8,40 +8,16 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         int playerNum = scanner.nextInt();
-        JankenHand player;
+        JankenHand player = JankenHand.fromInt(playerNum);
 
-        switch(playerNum) {
-            case 0:
-                player = JankenHand.Rock;
-                break;
-            case 1:
-                player = JankenHand.Scissors;
-                break;
-            case 2:
-                player = JankenHand.Paper;
-                break;
-            default:
-                return;
-        }
+        scanner.close();
 
         System.out.println("あなたの手：" + player);
 
-        int pc = new Random().nextInt(3);
+        int pcNum = new Random().nextInt(3);
+        JankenHand pc = JankenHand.fromInt(pcNum);
 
-        System.out.print("PCの手：　");
-        switch(pc) {
-            case 0:
-                System.out.println("グー");
-                break;
-            case 1:
-                System.out.println("チョキ");  
-                break;
-            case 2:
-                System.out.println("パー");
-                break;
-            default:
-                return;
-        }
+        System.out.println("PCの手：　" + pc);
 
         // switch(player) {
         //     case 0:
