@@ -5,19 +5,16 @@ public enum JankenHand {
     Scissors,
     Paper;
 
-    public void displayHand() {
+    public String displayHand() {
         switch(this) {
             case Rock:
-                System.out.println("グー");
-                break;
+                return "グー";
             case Scissors:
-                System.out.println("チョキ");  
-                break;
+                return "チョキ";  
             case Paper:
-                System.out.println("パー");
-                break;
+                return"パー";
             default:
-                return;
+                return "";
         }
     }
 }
