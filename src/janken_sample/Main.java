@@ -3,10 +3,10 @@ package janken_sample;
 import java.util.*;
 
 public class Main {
+    private static final int JANKEN_COUNT = 5;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int JANKEN_COUNT = 5;
 
         int playerWin = 0;
 
