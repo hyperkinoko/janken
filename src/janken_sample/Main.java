@@ -16,8 +16,7 @@ public class Main {
 
             System.out.println("あなたの手：" + playerHand);
 
-            Pc pc = new Pc();
-            pc.setStrategy(new ChottoKashikoiStrategy());
+            Pc pc = new Pc(new RandomStrategy());
             JankenHand pcHand = pc.nextHand();
 
             System.out.println("PCの手：　" + pcHand);
