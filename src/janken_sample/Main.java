@@ -30,6 +30,7 @@ public class Main {
             } else {
                 System.out.println("あいこです");
             }
+            pc.setPrevHandsToStrategy(pcHand, playerHand);
         }
         System.out.println(JANKEN_COUNT + "戦中" + playerWin + "回勝ちました");
         scanner.close();

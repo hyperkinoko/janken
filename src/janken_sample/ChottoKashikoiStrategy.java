@@ -1,7 +1,5 @@
 package janken_sample;
 
-import jdk.nashorn.internal.ir.ReturnNode;
-
 public class ChottoKashikoiStrategy implements JankenStrategy {
     private JankenHand prevMyHand;
     private JankenHand prevEnemyHand;

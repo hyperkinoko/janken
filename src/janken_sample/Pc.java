@@ -1,6 +1,5 @@
 package janken_sample;
 
-
 // track上ではPlayerクラス
 public class Pc {
     private JankenStrategy strategy;
