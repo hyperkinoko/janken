@@ -31,6 +31,10 @@ public enum JankenHand {
         }
     }
 
+    public boolean loseTo(JankenHand hand) {
+        return this != hand && !this.winTo(hand);
+    }
+
     @Override
     public String toString() {
         switch(this) {
