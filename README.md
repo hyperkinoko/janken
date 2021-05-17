@@ -129,6 +129,7 @@ STEP.3 → 難易度：8
 STEP.1 〜 STEP.3 → 難易度：9
 STEP.4 → 難易度 10
 
+### STEP.1
 [この時点](https://github.com/hyperkinoko/janken-sample/tree/53d2a8cd4417585549921e3f0b750230b9862c9b/src/janken_sample)でのコードを写経して、書いている内容がある程度読める。
 
 > `JankenStrategy`インターフェイスに`prevHands`メソッドを追加しなさい。  
@@ -139,12 +140,12 @@ STEP.4 → 難易度 10
 
 `RandomStrategy`や`FixedHandStrategy`が`prevHands`メソッドをオーバーライドしなくても良いことを理解し、その場合の`prevHands`メソッドの挙動を説明できる。
 
-STEP.2
+###  STEP.2
 `ChottoKashikoiStrategy.java`に書いてあるコードを理解できる。
 
-STEP.3
+### STEP.3
 trackの6章終わりの状態（サンプルコードの状態）までを、ある程度理解しながら自力で完成させることができる。
 
-STEP.4
+### STEP.4
 `prevHands`メソッドが実質`ChottoKashikoiStrategy`でしか実装されないにもかかわらず、独自のメソッドとしてではなく、`JankenStrategy`のメソッドとして定義しなければならない理由を、`main`メソッドや`Pc`クラスでどのように使用するかという観点から説明できる。
 
