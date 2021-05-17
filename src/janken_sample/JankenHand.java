@@ -4,19 +4,6 @@ public enum JankenHand {
     Rock,
     Scissors,
     Paper;
-
-    public String displayHand() {
-        switch(this) {
-            case Rock:
-                return "✊";
-            case Scissors:
-                return "チョキ";  
-            case Paper:
-                return "✋";
-            default:
-                return "";
-        }
-    }
  
     public static JankenHand fromInt(int n) {
         switch(n % 3) {
@@ -28,6 +15,19 @@ public enum JankenHand {
                 return Paper;
             default:
                 return null;
+        }
+    }
+
+    public boolean winTo(JankenHand hand){
+        switch(this) {
+            case Rock:
+                return hand == Scissors;
+            case Scissors:
+                return hand == Paper;
+            case Paper:
+                return hand == Rock;
+            default:
+                return false;
         }
     }
 
