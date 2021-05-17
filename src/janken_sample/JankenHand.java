@@ -21,6 +21,11 @@ public enum JankenHand {
     public boolean winTo(JankenHand hand){
         switch(this) {
             case Rock:
+                // if(hand == Scissors) {
+                //     return true;
+                // } else {
+                //     return false;
+                // }
                 return hand == Scissors;
             case Scissors:
                 return hand == Paper;

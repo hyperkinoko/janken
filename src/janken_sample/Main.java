@@ -19,6 +19,13 @@ public class Main {
 
         System.out.println("PCの手：　" + pc);
 
+        if(player.winTo(pc)) {
+            System.out.println("あなたの勝ちです");
+        } else if(player.loseTo(pc)){
+            System.out.println("あなたの負けです");
+        } else {
+            System.out.println("あいこです");
+        }
         // switch(player) {
         //     case 0:
         //         switch(pc) {
@@ -26,7 +33,7 @@ public class Main {
         //                 System.out.println("あいこです");
         //                 break;
         //             case 1:
-        //                 System.out.println("あなたの勝ちです");
+        //                 System.out.println("勝ち!!!");
         //                 break;
         //             case 2:
         //                 System.out.println("あなたの負けです");
@@ -42,7 +49,7 @@ public class Main {
         //                 System.out.println("あいこです");
         //                 break;
         //             case 2:
-        //                 System.out.println("あなたの勝ちです");
+        //                 System.out.println("勝ち!!!");
         //                 break;
         //         }
         //         break;
