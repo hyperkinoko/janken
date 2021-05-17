@@ -113,7 +113,7 @@ STEP.3 → 難易度：8
 
 ### STEP.2
 `Pc.java`の7行目、8行目が理解できる。  
-サンプルコードでは`Pc`が次の手を出す戦略として、`RandomStrategy`を使っているが、`FixedHandStrategy`を使うように書き換えることができる。
+サンプルコードではPCが次の手を出す戦略として、`RandomStrategy`を使っているが、`FixedHandStrategy`を使うように書き換えることができる。
 
 ### STEP.3
 このサンプルコードの状態から、trackの5章終わりの状態まで、理解しながら書き換えることができる。
