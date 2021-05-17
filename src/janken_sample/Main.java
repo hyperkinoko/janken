@@ -17,6 +17,7 @@ public class Main {
             System.out.println("あなたの手：" + playerHand);
 
             Pc pc = new Pc();
+            pc.setStrategy(new ChottoKashikoiStrategy());
             JankenHand pcHand = pc.nextHand();
 
             System.out.println("PCの手：　" + pcHand);
