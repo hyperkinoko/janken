@@ -77,7 +77,7 @@ JankenHand player = JankenHand.fromInt(2);
 
 ## 繰り返し処理が書ける staticフィールドが定義/使用できる
 
-STEP.1 → 難易度：2
+STEP.1 → 難易度：2  
 STEP.2以降 → 難易度：4
 
 ### STEP.1
@@ -93,7 +93,7 @@ STEP.2以降 → 難易度：4
 
 ## インターフェイスの定義/実装ができる
 
-STEP.1、STEP.2 → 難易度：7
+STEP.1、STEP.2 → 難易度：7  
 STEP.3 → 難易度：8
 
 ### STEP.1
@@ -126,7 +126,7 @@ STEP.3 → 難易度：8
 
 ## インターフェイス定義時にデフォルトの挙動を設定したメソッドを書ける
 
-STEP.1 〜 STEP.3 → 難易度：9
+STEP.1 〜 STEP.3 → 難易度：9  
 STEP.4 → 難易度 10
 
 ### STEP.1
