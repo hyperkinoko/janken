@@ -2,9 +2,9 @@ package janken_sample;
 
 // track上ではPlayerクラス
 public class Pc {
-    private JankenStrategy strategy;
+    private final JankenStrategy strategy;
 
-    public void setStrategy(JankenStrategy strategy) {
+    public Pc(JankenStrategy strategy) {
         this.strategy = strategy;
     }
 
